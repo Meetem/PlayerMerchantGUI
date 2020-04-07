@@ -1,11 +1,14 @@
 package meetem.playermerchant.screen;
 
 import meetem.playermerchant.*;
+import meetem.playermerchant.locale.Localization;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
+import org.bukkit.Sound;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.HumanEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
@@ -69,15 +72,20 @@ public class MerchantLoreRemoveHandler implements Listener {
         }
         
         ItemStackOffer.unmarkItem(item, true);
-        if (removed) {
-            event.getView().getPlayer().sendMessage(String.format("%sDone :3 (%s, %s)\n", ChatColor.GREEN,
-                    offer.getOwner().getUniqueId(),
-                    offer.getOfferId()));
-        } else {
-            //Bukkit.broadcastMessage(String.format("Can't find offer %s %s\n", offerKey.getOwnerId(), offerKey.getOfferId()));
-            event.getView().getPlayer().sendMessage(String.format("%sOffer is expired :c\n", ChatColor.RED));
-            event.setCancelled(true);
+        HumanEntity humanEntity = event.getView().getPlayer();
+        Player player = null;
+        if(humanEntity instanceof Player)
+            player = (Player)humanEntity;
 
+        if (removed) {
+            if(player != null)
+                player.playSound(player.getLocation(), Sound.ENTITY_ITEM_PICKUP, 1f, 1f);
+        } else {
+            if(player != null){
+                Localization.printLocalized(player, LocaleKeys.OfferExpiredError);
+            }
+
+            event.setCancelled(true);
             Bukkit.getScheduler().scheduleSyncDelayedTask(Common.getPlugin(), new Runnable() {
                 public void run() {
                     event.getView().close();

@@ -13,6 +13,7 @@ public enum LocaleKeys {
     PriceFor,
     TitleManage,
     TitleOffer,
+    OfferExpiredError,
     TitleBuy,
     RemoveButton,
     PrevPageActive,

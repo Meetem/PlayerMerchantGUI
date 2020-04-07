@@ -92,6 +92,10 @@ public class IconMenuBase implements Listener {
         return setMenuItem(slot, item);
     }
 
+    /**
+     * You must override this function and call super.onInventoryClosed
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOWEST)
     protected void onInventoryClosed(InventoryCloseEvent event) {
         if (event.getView() != myView)
@@ -101,17 +105,16 @@ public class IconMenuBase implements Listener {
         handleClose();
     }
 
+    /**
+     * You must override this function and call super.onItemClicked
+     * @param event
+     */
     @EventHandler(priority = EventPriority.MONITOR)
     protected void onItemClicked(InventoryClickEvent event) {
         if (event.getView() != myView)
             return;
 
         InventoryAction action = event.getAction();
-        boolean isPickup = action == InventoryAction.PICKUP_ALL
-                || action == InventoryAction.PICKUP_HALF
-                || action == InventoryAction.PICKUP_ONE
-                || action == InventoryAction.PICKUP_SOME;
-
         int slot = event.getRawSlot();
         boolean insideMenu = slot >= 0 && slot < this.size;
         if (insideMenu) {

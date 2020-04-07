@@ -5,6 +5,7 @@ NoOfferError: $cRED$cBOLDYou must set item to sell
 NoPriceError: $cRED$cBOLDYou must set price for item
 SellerNameLore: "$cWHITESeller: $cGREEN$cBOLD%s"
 PriceFor: $cBLACK$cBOLDPrice for %s
+OfferExpiredError: $cRED$cBOLDOffer is expired :c
 TitleManage: $cBLACK$cBOLDManage offers
 TitleOffer: $cBLACK$cBOLDOffer
 TitleBuy: $cBLACK$cBOLDBuy

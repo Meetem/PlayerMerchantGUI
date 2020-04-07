@@ -5,6 +5,7 @@ NoOfferError: $cRED$cBOLDНужно поставить товар рядом с 
 NoPriceError: $cRED$cBOLDНужно поставить цену рядом с золотом
 SellerNameLore: "$cWHITEПродавец: $cGREEN$cBOLD%s"
 PriceFor: $cBLACK$cBOLDЦена за %s
+OfferExpiredError: $cRED$cBOLDПредложение истекло
 TitleManage: $cBLACK$cBOLDМои товары
 TitleOffer: $cBLACK$cBOLDВыбор товара
 TitleBuy: $cBLACK$cBOLDПокупка

@@ -40,7 +40,7 @@ public class OfferTransaction {
         if(state != STATE_UNKNOWN)
             return false;
 
-        offerScreen = new MerchantSellOfferScreen(player, this, String.format("%s%sOffer", ChatColor.BOLD, ChatColor.BLACK));
+        offerScreen = new MerchantSellOfferScreen(player, this, Localization.getLocalized(player, LocaleKeys.TitleOffer));
         offerScreen.show();
 
         state = STATE_WAITING_RESULT;

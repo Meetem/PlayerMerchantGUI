@@ -7,7 +7,7 @@ description: Allow players to expose offers to exchange items with each others
 website: https://github.com/Meetem
 commands:
   merchant:
-    description: Merchant items between players
+    description: Exchange items between players
     permission: playermerchant.exchange
     usage: |
       /<command> sell - open selling menu
