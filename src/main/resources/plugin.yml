@@ -1,0 +1,19 @@
+name: PlayerMerchant
+version: 1.0-SNAPSHOT
+main: meetem.playermerchant.PlayerMerchant
+api-version: 1.15
+authors: [Meetem]
+description: Allow players to expose offers to exchange items with each others
+website: https://github.com/Meetem
+commands:
+  merchant:
+    description: Merchant items between players
+    permission: playermerchant.exchange
+    usage: |
+      /<command> sell - open selling menu
+      /<command> buy - open buy menu
+      /<command> list - manage your offers
+permissions:
+  playermerchant.exchange:
+    description: Gives access to all player merchant commands
+    default: true

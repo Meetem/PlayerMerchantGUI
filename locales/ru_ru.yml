@@ -1,0 +1,24 @@
+OfferSingle: $cBLUE$cBOLDТовар
+PriceSingle: $cGOLD$cBOLDЦена
+OfferAddPrice: $cBLUE$cBOLDТовар $cWHITEи $cGOLD$cBOLDцена
+NoOfferError: $cRED$cBOLDНужно поставить товар рядом с сундуком
+NoPriceError: $cRED$cBOLDНужно поставить цену рядом с золотом
+SellerNameLore: "$cWHITEПродавец: $cGREEN$cBOLD%s"
+PriceFor: $cBLACK$cBOLDЦена за %s
+TitleManage: $cBLACK$cBOLDМои товары
+TitleOffer: $cBLACK$cBOLDВыбор товара
+TitleBuy: $cBLACK$cBOLDПокупка
+RemoveButton: $cRED$cBOLDУдалить
+PrevPageActive: $cBLUE$cBOLDПред. страница
+PrevPageNo: $cDARK_GRAY$cBOLDПред. страница
+NextPageActive: $cBLUE$cBOLDСлед. страница
+NextPageNo: $cDARK_GRAY$cBOLDСлед. страница
+AddButton: $cGREEN$cBOLDДобавить
+AddButtonLore: $cWHITEНовая продажа
+PriceLore: "Положи рядом что хочешь получить"
+OfferLore: "Положи рядом что хочешь продать"
+OfferManageLore: "$cWHITEТовар слева, цена справа"
+SellButton: $cGREEN$cBOLDПродать
+NextButton: $cGREEN$cBOLDДалее
+ProceedToPrice: "$cWHITEУстановка цены"
+OfferCompleted: Выставлено $cBLUE$cBOLD%s $cRESETза $cGOLD$cBOLD%s

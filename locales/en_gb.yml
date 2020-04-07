@@ -1,0 +1,24 @@
+OfferSingle: $cBLUE$cBOLDOffer
+PriceSingle: $cGOLD$cBOLDPrice
+OfferAddPrice: $cBLUE$cBOLDOffer $cWHITE& $cGOLD$cBOLDPrice
+NoOfferError: $cRED$cBOLDYou must set item to sell
+NoPriceError: $cRED$cBOLDYou must set price for item
+SellerNameLore: "$cWHITESeller: $cGREEN$cBOLD%s"
+PriceFor: $cBLACK$cBOLDPrice for %s
+TitleManage: $cBLACK$cBOLDManage offers
+TitleOffer: $cBLACK$cBOLDOffer
+TitleBuy: $cBLACK$cBOLDBuy
+RemoveButton: $cRED$cBOLDRemove
+PrevPageActive: $cBLUE$cBOLDPrev. Page
+PrevPageNo: $cDARK_GRAY$cBOLDPrev. Page
+NextPageActive: $cBLUE$cBOLDNext Page
+NextPageNo: $cDARK_GRAY$cBOLDNext Page
+AddButton: $cGREEN$cBOLDAdd
+AddButtonLore: $cWHITESell something
+PriceLore: "Put item you want to get for your item"
+OfferLore: "Put one item or stack you want to sell next to this chest"
+OfferManageLore: "$cWHITEOffer at left, and price at right"
+SellButton: $cGREEN$cBOLDSell
+NextButton: $cGREEN$cBOLDNext
+ProceedToPrice: "$cWHITEProceed to price"
+OfferCompleted: Sell $cBLUE$cBOLD%s $cRESETfor $cGOLD$cBOLD%s

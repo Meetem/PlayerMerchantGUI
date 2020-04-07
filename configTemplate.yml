@@ -1,0 +1,53 @@
+config:
+  priceItems:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: ELYTRA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: DIAMOND
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: DIAMOND_BLOCK
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: ENCHANTED_GOLDEN_APPLE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: GOLDEN_APPLE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: GOLDEN_CARROT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: TRIDENT
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: FIREWORK_ROCKET
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: FIREWORK_STAR
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: EMERALD
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: EMERALD_BLOCK
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: GOLD_INGOT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: GOLD_BLOCK
+    amount: 64
+    
