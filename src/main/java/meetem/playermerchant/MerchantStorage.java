@@ -1,6 +1,7 @@
 package meetem.playermerchant;
 
 import com.sun.istack.internal.NotNull;
+import meetem.playermerchant.filters.MerchantOffersFilter;
 import meetem.playermerchant.serialize.MerchantStorageRW;
 import org.bukkit.plugin.Plugin;
 
@@ -45,7 +46,7 @@ public class MerchantStorage {
 
         for (PlayerMerchantData fd : merchants) {
             if(fd.owner == null)
-                Common.getLogger().severe("For fucks sake there is not owner of player data");
+                continue;
 
             if (fd.owner.getUniqueId().equals(ownerUUID)) {
                 return fd;

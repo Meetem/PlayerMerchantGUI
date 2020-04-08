@@ -233,7 +233,7 @@ public class MerchantManageScreen extends IconMenuBase {
             return;
         }
 
-        System.out.println("Handling close");
+        //System.out.println("Handling close");
         manage.cancel();
         skipCloseHandling = false;
     }

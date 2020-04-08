@@ -1,4 +1,6 @@
-package meetem.playermerchant;
+package meetem.playermerchant.filters;
+
+import meetem.playermerchant.MerchantOffer;
 
 import java.util.ArrayList;
 

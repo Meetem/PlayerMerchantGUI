@@ -1,8 +1,7 @@
 package meetem.playermerchant;
 
+import meetem.playermerchant.config.Config;
 import meetem.playermerchant.locale.Localization;
-import meetem.playermerchant.screen.MerchantLoreRemoveHandler;
-import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;

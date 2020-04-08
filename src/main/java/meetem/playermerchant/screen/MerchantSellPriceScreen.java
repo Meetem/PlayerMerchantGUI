@@ -192,7 +192,7 @@ public class MerchantSellPriceScreen extends IconMenuBase {
             return;
         }
 
-        System.out.println("Handling close");
+        //System.out.println("Handling close");
         transaction.cancel();
         skipCloseHandling = false;
     }

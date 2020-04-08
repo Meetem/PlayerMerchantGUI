@@ -60,7 +60,7 @@ public class MerchantSellOfferScreen extends IconMenuBase {
             return;
         }
 
-        System.out.println("Handling close");
+        //System.out.println("Handling close");
         transaction.setResult(this.getItems());
         transaction.cancel();
         skipCloseHandling = false;

@@ -50,4 +50,4 @@ config:
     v: 2230
     type: GOLD_BLOCK
     amount: 64
-    
+  sellPromptFormat: "All"

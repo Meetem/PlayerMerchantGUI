@@ -158,6 +158,6 @@ public class IconMenuBase implements Listener {
     }
 
     protected void handleClose() {
-        System.out.println("Closed icon menu");
+        //System.out.println("Closed icon menu");
     }
 }

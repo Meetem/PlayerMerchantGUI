@@ -26,7 +26,7 @@ public final class MerchantStorageRW {
             if(fp.isDirectory())
                 return;
 
-            Common.getLogger().info(String.format("[PlayerMerchant] Loading merchant data %s\n", fp.getAbsolutePath()));
+            Common.getLogger().info(String.format("Loading merchant data %s\n", fp.getAbsolutePath()));
             try{
                 PlayerMerchantData readData = MerchantDataFileRW.readMerchant(fp);
                 merchants.add(readData);

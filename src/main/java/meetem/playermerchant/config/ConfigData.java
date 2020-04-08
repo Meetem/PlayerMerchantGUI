@@ -1,4 +1,4 @@
-package meetem.playermerchant;
+package meetem.playermerchant.config;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -7,6 +7,8 @@ public class ConfigData {
     private static ItemStack getStack(Material material){
         return new ItemStack(material, material.getMaxStackSize());
     }
+
+    public ConfigPromptFormat sellPromptFormat = ConfigPromptFormat.All;
 
     public ItemStack[] priceItems = new ItemStack[]{
             getStack(Material.ELYTRA),

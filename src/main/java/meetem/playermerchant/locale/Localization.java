@@ -39,6 +39,19 @@ public class Localization {
         Bukkit.broadcastMessage(getLocalized(locale, key, args));
     }
 
+    public static <E extends Enum<E>> void printAllLocalized(E key, Object ... args){
+        printAllLocalized(key.toString(), args);
+    }
+
+    public static void printAllLocalized(String key, Object ... args){
+        for(Player p : Bukkit.getOnlinePlayers()){
+            if(p == null)
+                continue;
+
+            printLocalized(p, key, args);
+        }
+    }
+
     public static <E extends Enum<E>> void printLocalized(Player p, E key, Object ... args){
         if(p == null)
             return;

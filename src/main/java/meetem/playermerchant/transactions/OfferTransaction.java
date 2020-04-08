@@ -1,13 +1,13 @@
 package meetem.playermerchant.transactions;
 
 import meetem.playermerchant.*;
+import meetem.playermerchant.config.Config;
+import meetem.playermerchant.config.ConfigPromptFormat;
 import meetem.playermerchant.locale.Localization;
 import meetem.playermerchant.screen.MerchantSellOfferScreen;
 import meetem.playermerchant.screen.MerchantSellPriceScreen;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
@@ -118,10 +118,25 @@ public class OfferTransaction {
 
         MerchantStorage.getInstance().saveStorage(true);
 
-        Localization.printLocalized(player, LocaleKeys.OfferCompleted,
-                Util.prettyPrintItemPrice(result.get(0)),
-                Util.prettyPrintItemPrice(this.price.get(0))
-        );
+        ConfigPromptFormat promptFormat = Config.getConfig().sellPromptFormat;
+        if(promptFormat != ConfigPromptFormat.None){
+            if(promptFormat == ConfigPromptFormat.OnlySelf){
+                Localization.printLocalized(player, LocaleKeys.OfferCompleted,
+                        player.getPlayerListName(),
+                        Util.prettyPrintItemPrice(result.get(0)),
+                        Util.prettyPrintItemPrice(this.price.get(0))
+                );
+            }else if(promptFormat == ConfigPromptFormat.All){
+                Localization.printAllLocalized(LocaleKeys.OfferCompleted,
+                        player.getPlayerListName(),
+                        Util.prettyPrintItemPrice(result.get(0)),
+                        Util.prettyPrintItemPrice(this.price.get(0))
+                );
+            }
+        }
+
+
+
         state = STATE_COMPLETED;
     }
 

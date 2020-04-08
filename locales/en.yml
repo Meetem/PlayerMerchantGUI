@@ -22,4 +22,4 @@ OfferManageLore: "$cWHITEOffer at left, and price at right"
 SellButton: $cGREEN$cBOLDSell
 NextButton: $cGREEN$cBOLDNext
 ProceedToPrice: "$cWHITEProceed to price"
-OfferCompleted: Sell $cBLUE$cBOLD%s $cRESETfor $cGOLD$cBOLD%s
+OfferCompleted: "Player %s selling $cBLUE$cBOLD%s $cRESETfor $cGOLD$cBOLD%s"

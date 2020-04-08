@@ -1,5 +1,6 @@
-package meetem.playermerchant;
+package meetem.playermerchant.config;
 
+import meetem.playermerchant.Common;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
@@ -36,6 +37,7 @@ public class Config {
 
         loadedData.priceItems = priceItems.toArray(new ItemStack[0]);
         configuration.set("config.priceItems", loadedData.priceItems);
+        loadedData.sellPromptFormat = ConfigPromptFormat.valueOf(configuration.getString("config.sellPromptFormat", "All"));
 
         try {
             configuration.save(getConfigFile());

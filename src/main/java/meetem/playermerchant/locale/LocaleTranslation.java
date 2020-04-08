@@ -52,7 +52,7 @@ public class LocaleTranslation {
             numKeys++;
         }
 
-        Common.getLogger().info(String.format("Loaded local %s with %d valid keys", localeName, numKeys));
+        Common.getLogger().info(String.format("Loaded locale %s with %d valid keys", localeName, numKeys));
     }
 
     public String getLocalized(String key, String def){

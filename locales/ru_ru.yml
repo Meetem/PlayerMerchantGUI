@@ -22,4 +22,4 @@ OfferManageLore: "$cWHITEТовар слева, цена справа"
 SellButton: $cGREEN$cBOLDПродать
 NextButton: $cGREEN$cBOLDДалее
 ProceedToPrice: "$cWHITEУстановка цены"
-OfferCompleted: Выставлено $cBLUE$cBOLD%s $cRESETза $cGOLD$cBOLD%s
+OfferCompleted: "%s выставил на продажу $cBLUE$cBOLD%s $cRESETза $cGOLD$cBOLD%s"

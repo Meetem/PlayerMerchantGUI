@@ -35,7 +35,7 @@ public final class MerchantCommandHandler implements CommandExecutor, Listener {
     }
 
     private boolean listSell(Player player) {
-        System.out.println("Ok, sell");
+        //System.out.println("Ok, sell");
         OfferTransaction currentSell = new OfferTransaction(player);
         currentSell.start();
         return true;
